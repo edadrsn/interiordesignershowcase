@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffffff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.hat1 {
+    font-size: 4rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.hat2{
+    font-size: 7rem;
+    color: #333;
+    margin-top: 0.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.contact-info p {
+    color: #b0b0b0;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.detail i {
+    color: #c03740;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.detail i:hover{
+    font-size: 30px;
+}
+.detail h2 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.detail p {
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c03740;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #c03740;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c03740;
+}
+
+.additional-addresses {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+
+.address {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.address i {
+    color: #c03740;
+    font-size: 2.8rem;
+    margin-right: 15px;
+}
+
+.address h2 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.address p {
+    color: #b0b0b0;
+    margin: 0;
+}
+
+
+/* Küçük ekranlar (telefonlar) için */
+@media (max-width: 768px) {
+    .contact-container,
+    .additional-addresses {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info,
+    .contact-form,
+    .address {
+        margin: 0 0 20px 0;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: none;
+    }
+
+    .contact-info p,
+    .detail p,
+    .address p {
+        font-size: 14px;
+    }
+
+    .hat1 {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .hat2 {
+        font-size: 4rem;
+        margin-top: 0.3rem;
+    }
+}
+
+/* Orta boy ekranlar (tabletler) için */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-container,
+    .additional-addresses {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form,
+    .address {
+        margin: 0 0 20px 0;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: none;
+    }
+
+    .hat1 {
+        font-size: 3.5rem;
+    }
+
+    .hat2 {
+        font-size: 6rem;
+    }
+}
+
+/* Büyük ekranlar (desktop) için */
+@media (min-width: 1025px) {
+    .contact-container,
+    .additional-addresses {
+        flex-direction: row;
+    }
+
+    .contact-info,
+    .contact-form,
+    .address {
+        margin: 0 20px;
+    }
+
+    .hat1 {
+        font-size: 4rem;
+    }
+
+    .hat2 {
+        font-size: 7rem;
+    }
+}

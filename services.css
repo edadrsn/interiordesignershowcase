@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+.services {
+    width: 100%;
+    height: auto;
+    padding: 8rem 0 4rem 0;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+.services-header h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #777;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.services-header h1 {
+    font-size: 5.3rem;
+    color: #333;
+    letter-spacing: 0.3rem;
+    margin-bottom: 6rem;
+}
+
+.services-content {
+    width: 80%;
+    margin: auto;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem 0;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.service-left {
+    flex-direction: row;
+}
+
+.service-right {
+    flex-direction: row-reverse;
+}
+
+.service img {
+    width: 48%;
+    height: 28rem;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 5%;
+    margin-top: 4rem;
+    box-shadow: -10px -10px 20px  rgb(62, 62, 62);
+}
+
+.service-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-info h3 {
+    font-size: 2rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.service-info h1 {
+    font-family: "Kanit", sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0;
+}
+
+.service-info p {
+    font-size: 1.6rem;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.service-info a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #c03740;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.service-info a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .service img {
+        width: 90%;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    .service-info {
+        width: 65%;
+    }
+    .service-info h3,h1,p,a {
+        font-size: 2rem;
+    }
+}
